@@ -7,6 +7,20 @@
     android:orientation="vertical"
     tools:context="com.mobil.android.milliondollarquiz.Game">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:text="@string/warning_text"/>
+
+
+
+    <TextView
+        android:id="@+id/question_number_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="24dp" />
+
 
 
     <Button

@@ -4,12 +4,12 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
-import android.view.View;
+
 import android.widget.Button;
 import android.widget.TextView;
 
 public class Game extends AppCompatActivity {
-
+    private int numberQuestion =1;
     private static final String EXTRA_ANSWER_IS_TRUE =
             "com.bignerdranch.android.geoquiz.answer_is_true";
     private static final String EXTRA_ANSWER_SHOWN =
@@ -20,6 +20,7 @@ public class Game extends AppCompatActivity {
     private boolean isAnswerShown=false;
 
     private TextView mAnswerTextView;
+    private TextView mQuestionNumberTextView;
     private Button mShowAnswerButton;
 
     public static Intent newIntent(Context packageContext, boolean answerIsTrue) {
@@ -42,11 +43,12 @@ public class Game extends AppCompatActivity {
             setAnswerShownResult(isAnswerShown);
         }
 
-       /* mAnswerIsTrue = getIntent().getBooleanExtra(EXTRA_ANSWER_IS_TRUE, false);
+        /*
+        mAnswerIsTrue = getIntent().getBooleanExtra(EXTRA_ANSWER_IS_TRUE, false);
 
         mAnswerTextView = (TextView) findViewById(R.id.answer_text_view);
 
-        /*
+
         mShowAnswerButton = (Button) findViewById(R.id.show_answer_button);
         mShowAnswerButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,8 +60,10 @@ public class Game extends AppCompatActivity {
                 }
                 setAnswerShownResult(true);
             }
-        });
-        */
+        });*/
+
+        mQuestionNumberTextView = (TextView) findViewById(R.id.question_number_text_view);
+        mQuestionNumberTextView.setText(numberQuestion +"");
     }
 
     @Override
