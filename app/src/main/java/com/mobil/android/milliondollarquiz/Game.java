@@ -42,10 +42,11 @@ public class Game extends AppCompatActivity {
             setAnswerShownResult(isAnswerShown);
         }
 
-        mAnswerIsTrue = getIntent().getBooleanExtra(EXTRA_ANSWER_IS_TRUE, false);
+       /* mAnswerIsTrue = getIntent().getBooleanExtra(EXTRA_ANSWER_IS_TRUE, false);
 
         mAnswerTextView = (TextView) findViewById(R.id.answer_text_view);
 
+        /*
         mShowAnswerButton = (Button) findViewById(R.id.show_answer_button);
         mShowAnswerButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,6 +59,7 @@ public class Game extends AppCompatActivity {
                 setAnswerShownResult(true);
             }
         });
+        */
     }
 
     @Override
