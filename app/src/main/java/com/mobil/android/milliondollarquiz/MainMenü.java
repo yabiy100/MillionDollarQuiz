@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class QuizActivity extends AppCompatActivity {
+public class MainMenü extends AppCompatActivity {
 
     private static final String TAG = "QuizActivity";
     private static final String KEY_INDEX = "index";
@@ -20,7 +20,7 @@ public class QuizActivity extends AppCompatActivity {
     private Button mTrueButton;
     private Button mFalseButton;
     private Button mNextButton;
-    private Button mCheatButton;
+    private Button mNewGameButton;
     private TextView mQuestionTextView;
 
     private Question[] mQuestionBank = new Question[] {
@@ -74,12 +74,12 @@ public class QuizActivity extends AppCompatActivity {
             }
         });
 
-        mCheatButton = (Button) findViewById(R.id.new_game);
-        mCheatButton.setOnClickListener(new View.OnClickListener() {
+        mNewGameButton = (Button) findViewById(R.id.new_game);
+        mNewGameButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 boolean answerIsTrue = mQuestionBank[mCurrentIndex].isAnswerTrue();
-                Intent intent = CheatActivity.newIntent(QuizActivity.this, answerIsTrue);
+                Intent intent = Game.newIntent(MainMenü.this, answerIsTrue);
                 startActivityForResult(intent, REQUEST_CODE_CHEAT);
             }
         });
@@ -97,7 +97,7 @@ public class QuizActivity extends AppCompatActivity {
             if (data == null) {
                 return;
             }
-            if (CheatActivity.wasAnswerShown(data)) {
+            if (Game.wasAnswerShown(data)) {
                 kopyaIndex=mCurrentIndex;
             }
 

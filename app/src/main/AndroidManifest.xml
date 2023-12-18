@@ -7,7 +7,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.mobil.android.milliondollarquiz.QuizActivity"
+        <activity android:name="com.mobil.android.milliondollarquiz.MainMenü"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -15,7 +15,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name="com.mobil.android.milliondollarquiz.CheatActivity">
+        <activity android:name="com.mobil.android.milliondollarquiz.Game">
         </activity>
     </application>
 

@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class CheatActivity extends AppCompatActivity {
+public class Game extends AppCompatActivity {
 
     private static final String EXTRA_ANSWER_IS_TRUE =
             "com.bignerdranch.android.geoquiz.answer_is_true";
@@ -23,7 +23,7 @@ public class CheatActivity extends AppCompatActivity {
     private Button mShowAnswerButton;
 
     public static Intent newIntent(Context packageContext, boolean answerIsTrue) {
-        Intent intent = new Intent(packageContext, CheatActivity.class);
+        Intent intent = new Intent(packageContext, Game.class);
         intent.putExtra(EXTRA_ANSWER_IS_TRUE, answerIsTrue);
         return intent;
     }
