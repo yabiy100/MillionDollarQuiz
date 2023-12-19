@@ -10,6 +10,11 @@ import android.widget.TextView;
 
 public class Game extends AppCompatActivity {
     private int numberQuestion =1;
+
+    //first element of moneyLevels array is empty because question numbers start with 1
+    private String[] moneyLevels = {
+           "","$50","$100","$200","$300","$500","$1000","$2000","$4000","$8000","$16000","$32000","$64000","$125000","$500000","$1000000"
+    };
     private static final String EXTRA_ANSWER_IS_TRUE =
             "com.bignerdranch.android.geoquiz.answer_is_true";
     private static final String EXTRA_ANSWER_SHOWN =
@@ -62,8 +67,8 @@ public class Game extends AppCompatActivity {
             }
         });*/
 
-        mQuestionNumberTextView = (TextView) findViewById(R.id.question_number_text_view);
-        mQuestionNumberTextView.setText(numberQuestion +"");
+        mQuestionNumberTextView = (TextView) findViewById(R.id.money_level);
+        mQuestionNumberTextView.setText(moneyLevels[numberQuestion]);
     }
 
     @Override
