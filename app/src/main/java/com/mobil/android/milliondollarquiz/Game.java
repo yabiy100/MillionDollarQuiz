@@ -8,13 +8,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.Random;
+
 public class Game extends AppCompatActivity {
     private int numberQuestion =1;
 
     //first element of moneyLevels array is empty because question numbers start with 1
-    private String[] moneyLevels = {
+    private final String[] moneyLevels = {
            "","$50","$100","$200","$300","$500","$1000","$2000","$4000","$8000","$16000","$32000","$64000","$125000","$500000","$1000000"
     };
+
+    private String[] questions;
+    private int randomNumber;
     private static final String EXTRA_ANSWER_IS_TRUE =
             "com.bignerdranch.android.geoquiz.answer_is_true";
     private static final String EXTRA_ANSWER_SHOWN =
@@ -26,6 +31,7 @@ public class Game extends AppCompatActivity {
 
     private TextView mAnswerTextView;
     private TextView mQuestionNumberTextView;
+    private TextView mQuestionTextView;
     private Button mShowAnswerButton;
 
     public static Intent newIntent(Context packageContext, boolean answerIsTrue) {
@@ -41,7 +47,7 @@ public class Game extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cheat);
+        setContentView(R.layout.game);
 
         if (savedInstanceState != null) {
             isAnswerShown = savedInstanceState.getBoolean(KEY_INDEX, false);
@@ -66,9 +72,15 @@ public class Game extends AppCompatActivity {
                 setAnswerShownResult(true);
             }
         });*/
+        questions = getResources().getStringArray(R.array.question);
 
         mQuestionNumberTextView = (TextView) findViewById(R.id.money_level);
         mQuestionNumberTextView.setText(moneyLevels[numberQuestion]);
+        mQuestionTextView = (TextView) findViewById(R.id.question);
+
+        randomNumber = new Random().nextInt(6) + 0;
+        String nextQuestion = questions[randomNumber];
+        mQuestionTextView.setText(nextQuestion);
     }
 
     @Override
