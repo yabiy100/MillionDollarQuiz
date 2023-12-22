@@ -4,9 +4,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
-
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Random;
 
@@ -21,7 +22,7 @@ public class Game extends AppCompatActivity {
     private String[] questions;
     private int randomNumber;
     private static final String EXTRA_ANSWER_IS_TRUE =
-            "com.bignerdranch.android.geoquiz.answer_is_true";
+            "com.bignerdranch.android.MillionDollarQuiz.answer_is_true";
     private static final String EXTRA_ANSWER_SHOWN =
             "com.bignerdranch.android.geoquiz.answer_shown";
     private static final String KEY_INDEX = "kopya";
@@ -30,9 +31,13 @@ public class Game extends AppCompatActivity {
     private boolean isAnswerShown=false;
 
     private TextView mAnswerTextView;
-    private TextView mQuestionNumberTextView;
+    private TextView mMoneyLevelTextView;
     private TextView mQuestionTextView;
     private Button mShowAnswerButton;
+    private Button mAnswerAButton;
+    private Button mAnswerBButton;
+    private Button mAnswerCButton;
+    private Button mAnswerDButton;
 
     public static Intent newIntent(Context packageContext, boolean answerIsTrue) {
         Intent intent = new Intent(packageContext, Game.class);
@@ -74,13 +79,41 @@ public class Game extends AppCompatActivity {
         });*/
         questions = getResources().getStringArray(R.array.question);
 
-        mQuestionNumberTextView = (TextView) findViewById(R.id.money_level);
-        mQuestionNumberTextView.setText(moneyLevels[numberQuestion]);
+        mMoneyLevelTextView = (TextView) findViewById(R.id.money_level);
+        mMoneyLevelTextView.setText(moneyLevels[numberQuestion]);
         mQuestionTextView = (TextView) findViewById(R.id.question);
+
+        mAnswerAButton = (Button) findViewById(R.id.a);
+        mAnswerBButton = (Button) findViewById(R.id.b);
+        mAnswerCButton = (Button) findViewById(R.id.c);
+        mAnswerDButton = (Button) findViewById(R.id.d);
 
         randomNumber = new Random().nextInt(6) + 0;
         String nextQuestion = questions[randomNumber];
         mQuestionTextView.setText(nextQuestion);
+
+        String[] correctAnswers = getResources().getStringArray(R.array.correct_answers);
+        mAnswerAButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (correctAnswers[randomNumber].equals("a")) {
+                        //new question
+                        int messageResourceId = 0;
+                        numberQuestion++;
+                        mMoneyLevelTextView.setText(moneyLevels[numberQuestion]);
+
+                        randomNumber = new Random().nextInt(6) + 0;
+                        String nextQuestion = questions[randomNumber];
+                        mQuestionTextView.setText(nextQuestion);
+                        messageResourceId = R.string.correct_toast;
+                        Toast.makeText(getApplicationContext(), messageResourceId, Toast.LENGTH_SHORT)
+                                .show();
+                    } else {
+                        //game over
+                    }
+                    setAnswerShownResult(true);
+                }
+            });
     }
 
     @Override

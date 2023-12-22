@@ -13,10 +13,15 @@
     <string name="true_button">True</string>
     <string name="false_button">False</string>
     <string name="next_button">Next</string>
-    <string name="correct_toast">Correct!</string>
-    <string name="incorrect_toast">Incorrect!</string>
+    <string name="correct_toast">Correct Answer!</string>
+    <string name="incorrect_toast">Incorrect Answer!</string>
     <string name="question">Are you sure you want to do this?</string>
     <string name="show_answer_button">Show Answer</string>
     <string name="new_game">New Game</string>
     <string name="judgment_toast">Cheating is wrong.</string>
+    <string name="a">A</string>
+    <string name="b">B</string>
+    <string name="c">C</string>
+    <string name="d">D</string>
+
 </resources>
