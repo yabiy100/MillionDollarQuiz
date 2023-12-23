@@ -1,0 +1,19 @@
+<resources>
+    <string-array name="question">
+        <item id="@+id/question1">Question 1 \na) answer a b) answer b \nc) answer c d) answer d</item>
+        <item id="@+id/question2">Question 2 \na) answer a b) answer b \nc) answer c d) answer d</item>
+        <item id="@+id/question3">Question 3 \na) answer a b) answer b \nc) answer c d) answer d</item>
+        <item id="@+id/question4">Question 4 \na) answer a b) answer b \nc) answer c d) answer d</item>
+        <item id="@+id/question5">Question 5 \na) answer a b) answer b \nc) answer c d) answer d</item>
+        <item id="@+id/question6">Question 6 \na) answer a b) answer b \nc) answer c d) answer d</item>
+    </string-array>
+
+    <string-array name="correct_answers">
+        <item>a</item>
+        <item>a</item>
+        <item>a</item>
+        <item>a</item>
+        <item>a</item>
+        <item>a</item>
+    </string-array>
+</resources>
