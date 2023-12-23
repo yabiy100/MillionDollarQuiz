@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MillionDollarQuiz</string>
+    <string name="app_name">Million Dollar Quiz</string>
     <string name="correct_toast">Correct Answer!</string>
     <string name="incorrect_toast">Incorrect Answer!</string>
     <string name="new_game">New Game</string>
