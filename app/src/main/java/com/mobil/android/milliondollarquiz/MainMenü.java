@@ -17,6 +17,8 @@ public class MainMenü extends AppCompatActivity {
     private static final String KEY_KOPYA = "kopya";
     private static final int REQUEST_CODE_CHEAT = 0;
     private Button mNewGameButton;
+    private Button mHighScoreButton;
+    private Button mStatisticsButton;
 
 
     @Override
