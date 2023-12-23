@@ -1,19 +1,110 @@
 <resources>
     <string-array name="question">
-        <item id="@+id/question1">Question 1 \na) answer a b) answer b \nc) answer c d) answer d</item>
-        <item id="@+id/question2">Question 2 \na) answer a b) answer b \nc) answer c d) answer d</item>
-        <item id="@+id/question3">Question 3 \na) answer a b) answer b \nc) answer c d) answer d</item>
-        <item id="@+id/question4">Question 4 \na) answer a b) answer b \nc) answer c d) answer d</item>
-        <item id="@+id/question5">Question 5 \na) answer a b) answer b \nc) answer c d) answer d</item>
-        <item id="@+id/question6">Question 6 \na) answer a b) answer b \nc) answer c d) answer d</item>
+        <item id="@+id/question1">What is the capital of Italy?\n a) Berlin b) Paris \n c) Madrid d) Rome</item>
+        <item id="@+id/question2">Who wrote "The Great Gatsby"?\n a) Ernest Hemingway b)F. Scott Fitzgerald \n c) Jane Austen d) George Orwell</item>
+        <item id="@+id/question3">Which planet is known as the "Morning Star"?\n a) Venus b) Mars \n c) Jupiter d) Mercury</item>
+        <item id="@+id/question4">In which year did the first manned moon landing occur?\n a) 1982 b) 1975 \n c) 1969 d) 1961</item>
+        <item id="@+id/question5">Who painted "Starry Night"?\n a) Vincent van Gogh b) Pablo Picasso \n c) Claude Monet d) Leonardo da Vinci</item>
+        <item id="@+id/question6">What is the currency of South Korea?\n a) Yen b) Won \n c) Ringgit d) Baht</item>
+        <item id="@+id/question7">Which river is the longest in the world?\n a) Nile b) Amazon \n c) Yangtze d) Mississippi</item>
+        <item id="@+id/question8">Who wrote "The Catcher in the Rye"?\n a) Mark Twain b) Harper Lee \n c) J.K. Rowling d)  J.D. Salinger</item>
+        <item id="@+id/question9">What is the smallest prime number?\n a) 3 b) 1 \n c) 2 d) 5</item>
+        <item id="@+id/question10">Which gas makes up the majority of Earths atmosphere?\n a) Nitrogen b) Oxygen \n c) Carbon dioxide d) Argon</item>
+        <item id="@+id/question11">Who discovered penicillin?\n a) Alexander Fleming b) Marie Curie \n c) Louis Pasteur d) Isaac Newton</item>
+        <item id="@+id/question12">What is the largest continent by land area?\n a) Europe b) Asia \n c) North America d) Africa</item>
+        <item id="@+id/question13">Who is the author of "The Hobbit"?\n a) J.K. Rowling b) C.S. Lewis \n c) J.R.R. Tolkien d) George R.R. Martin</item>
+        <item id="@+id/question14">What is the capital of Russia?\n a) Moscow b) St. Petersburg \n c) Kiev d) Warsaw</item>
+        <item id="@+id/question15">In which year did the Titanic sink?\n a) 1898 b) 1905 \n c) 1923 d) 1912</item>
+        <item id="@+id/question16">Which is the largest animal on Earth?\n a) Blue whale b) Elephant \n c) Giraffe d) Rhinoceros</item>
+        <item id="@+id/question17">What is the chemical symbol for gold?\n a) Fe b) Ag \n c) Au d) Cu</item>
+        <item id="@+id/question18">Who composed the "Moonlight Sonata"?\n a) Franz Schubert b) Wolfgang Amadeus Mozart \n c) Johann Sebastian Bach d) Ludwig van Beethoven </item>
+        <item id="@+id/question19">What is the capital of Canada?\n a) Ottawa b) Toronto \n c) Vancouver d) Montreal</item>
+        <item id="@+id/question20">Who is known as the "Father of Computers"?\n a) Steve Jobs  b) Alan Turing \n c) Bill Gates d) Charles Babbage </item>
+        <item id="@+id/question21">What is the largest desert in the world?\n a) Antarctica b) Sahara \n c) Gobi d) Kalahari</item>
+        <item id="@+id/question22">Which is the largest moon of Jupiter?\n a) Ganymede b) Europa \n c) Callisto d) Io</item>
+        <item id="@+id/question23">Who wrote "The Canterbury Tales"?\n a) John Milton b) William Shakespeare \n c) Geoffrey Chaucer d) Dante Alighieri</item>
+        <item id="@+id/question24">What is the speed of light?\n a) 299,792 kilometers per second b) 314,159 kilometers per second \n c) 501,201 kilometers per second d) 200,000 kilometers per second</item>
+        <item id="@+id/question25">In which year did the Berlin Wall fall?\n a) 1963 b) 1975 \n c) 1995 d) 1989</item>
+        <item id="@+id/question26">Who is the author of "One Hundred Years of Solitude"?\n a) Gabriel Garcia Marquez b) Isabel Allende \n c) Mario Vargas Llosa d) Pablo Neruda</item>
+        <item id="@+id/question27">What is the largest species of big cat?\n a) African Lion b) Siberian Tiger  \n c) Bengal Tiger d) Jaguar</item>
+        <item id="@+id/question28">Who discovered gravity?\n a) Johannes Kepler  b) Albert Einstein \n c) Galileo Galilei d) Isaac Newton </item>
+        <item id="@+id/question29">What is the chemical symbol for water?\n a) NaCl b) NO2 \n c) H2O d) CO2 </item>
+        <item id="@+id/question30">Which is the highest mountain in the world?\n a) Mount Everest b) K2 \n c) Kangchenjunga d) Lhotse</item>
+        <item id="@+id/question31">Who painted "The Last Supper"?\n a) Leonardo da Vinci b) Michelangelo \n c) Raphael d) Donatello</item>
+        <item id="@+id/question32">What is the capital of China?\n a) Beijing b) Shanghai \n c) Hong Kong d) Taipei</item>
+        <item id="@+id/question33">In which year did World War I begin?\n a) 1914 b) 1917 \n c) 1919 d) 1911</item>
+        <item id="@+id/question34">Who is the author of "The Odyssey"?\n a) Homer b) Virgil \n c) Sophocles d) Aesop</item>
+        <item id="@+id/question35">What is the largest bird in the world?\n a) Ostrich b) Eagle \n c) Albatross d) Penguin</item>
+        <item id="@+id/question36">Which element has the chemical symbol Na?\n a) Sodium b) Nickel \n c) Neon d) Nitrogen</item>
+        <item id="@+id/question37">Who played the character of Jack Dawson in the movie Titanic?\n a) Leonardo DiCaprio b) Tom Hanks \n c) Brad Pitt d) Johnny Depp</item>
+        <item id="@+id/question38">What is the capital of South Africa?\n a) Pretoria b) Cape Town \n c) Johannesburg d) Durban</item>
+        <item id="@+id/question39">Who wrote "The Scarlet Letter"?\n a) Nathaniel Hawthorne b) Edgar Allan Poe \n c) Herman Melville d) Emily Dickinson</item>
+        <item id="@+id/question40">Which planet is known as the "Red Planet"?\n a) Mars b) Venus \n c) Jupiter d) Saturn</item>
+        <item id="@+id/question41">Who is the lead vocalist of the band Queen?\n a) Freddie Mercury b) Mick Jagger \n c) David Bowie d) Elton John</item>
+        <item id="@+id/question42">What is the smallest prime number?\n a) 2 b) 1 \n c) 3 d) 5</item>
+        <item id="@+id/question43">Who wrote "The Adventures of Sherlock Holmes"?\n a) Arthur Conan Doyle b) Agatha Christie \n c) Raymond Chandler d) Dashiell Hammett</item>
+        <item id="@+id/question44">What is the capital of Argentina?\n a) Buenos Aires b) Rio de Janeiro \n c) Santiago d) Lima</item>
+        <item id="@+id/question45">Which planet is known as the "Blue Planet"?\n a) Earth b) Neptune \n c) Uranus d) Pluto</item>
+        <item id="@+id/question46">In which year did World War II begin?\n a) 1939 b) 1941 \n c) 1943 d) 1945</item>
+        <item id="@+id/question47">Who is the author of "The Lord of the Rings"?\n a) J.R.R. Tolkien b) C.S. Lewis \n c) J.K. Rowling d) George R.R. Martin</item>
+        <item id="@+id/question48">What is the largest animal on land?\n a) Elephant b) Giraffe \n c) Rhinoceros d) Hippopotamus</item>
+        <item id="@+id/question49">What is the chemical symbol for iron?\n a) Fe b) Au \n c) Ag d) Cu</item>
+        <item id="@+id/question50">Who is known as the "Queen of Pop"?\n a) Madonna b) Beyoncé \n c) Rihanna d) Lady Gaga</item>
     </string-array>
 
     <string-array name="correct_answers">
+        <!-- first 10 Questions -->
+        <item>d</item>
+        <item>b</item>
+        <item>a</item>
+        <item>c</item>
+        <item>a</item>
+        <item>b</item>
+        <item>a</item>
+        <item>d</item>
+        <item>c</item>
+        <item>a</item>
+        <!-- Questions 11 to 30-->
+        <item>a</item>
+        <item>d</item>
+        <item>c</item>
+        <item>a</item>
+        <item>d</item>
+        <item>a</item>
+        <item>c</item>
+        <item>d</item>
+        <item>a</item>
+        <item>b</item>
+        <item>d</item>
+        <item>a</item>
+        <item>c</item>
+        <item>a</item>
+        <item>d</item>
+        <item>a</item>
+        <item>b</item>
+        <item>d</item>
+        <item>c</item>
+        <item>a</item>
+        <!-- Question 31 to 50-->
+        <item>a</item>
+        <item>b</item>
+        <item>c</item>
         <item>a</item>
         <item>a</item>
+        <item>d</item>
+        <item>b</item>
+        <item>b</item>
         <item>a</item>
         <item>a</item>
+        <item>d</item>
+        <item>b</item>
+        <item>c</item>
         <item>a</item>
+        <item>a</item>
+        <item>c</item>
+        <item>b</item>
+        <item>a</item>
+        <item>d</item>
         <item>a</item>
     </string-array>
 </resources>
