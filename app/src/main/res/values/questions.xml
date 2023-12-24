@@ -26,6 +26,7 @@
         <item id="@+id/question24">What is the speed of light?\n a) 299,792 kilometers per second b) 314,159 kilometers per second \n c) 501,201 kilometers per second d) 200,000 kilometers per second</item>
         <item id="@+id/question25">In which year did the Berlin Wall fall?\n a) 1963 b) 1975 \n c) 1995 d) 1989</item>
         <item id="@+id/question26">Who is the author of "One Hundred Years of Solitude"?\n a) Gabriel Garcia Marquez b) Isabel Allende \n c) Mario Vargas Llosa d) Pablo Neruda</item>
+        <!--Checked questions up till here -->
         <item id="@+id/question27">What is the largest species of big cat?\n a) African Lion b) Siberian Tiger  \n c) Bengal Tiger d) Jaguar</item>
         <item id="@+id/question28">Who discovered gravity?\n a) Johannes Kepler  b) Albert Einstein \n c) Galileo Galilei d) Isaac Newton </item>
         <item id="@+id/question29">What is the chemical symbol for water?\n a) NaCl b) NO2 \n c) H2O d) CO2 </item>
@@ -65,6 +66,9 @@
         <item>c</item>
         <item>a</item>
         <!-- Questions 11 to 30-->
+
+
+
         <item>a</item>
         <item>d</item>
         <item>c</item>
@@ -74,8 +78,8 @@
         <item>c</item>
         <item>d</item>
         <item>a</item>
+        <item>d</item>
         <item>b</item>
-        <item>d</item>
         <item>a</item>
         <item>c</item>
         <item>a</item>

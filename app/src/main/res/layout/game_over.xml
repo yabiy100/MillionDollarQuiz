@@ -17,13 +17,13 @@
         android:layout_marginBottom="450dp"/>
 
     <TextView
-        android:id="@+id/question"
+        android:id="@+id/game_over"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="24dp"
         android:layout_marginTop="-375dp"
         android:textSize="22sp"
-        android:text="@string/question"/>
+         />
 
 
 </LinearLayout>

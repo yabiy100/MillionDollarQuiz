@@ -4,6 +4,7 @@
     <string name="incorrect_toast">Incorrect Answer!</string>
     <string name="new_game">New Game</string>
     <string name="question">Dummy Question</string>
+    <string name="game_over"></string>
     <string name="a">A</string>
     <string name="b">B</string>
     <string name="c">C</string>

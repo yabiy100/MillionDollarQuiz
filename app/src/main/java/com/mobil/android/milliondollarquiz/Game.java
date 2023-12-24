@@ -4,6 +4,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -36,7 +38,7 @@ public class Game extends AppCompatActivity {
         setContentView(R.layout.game);
 
         if (savedInstanceState != null) {
-            numberQuestion = savedInstanceState.getInt(KEY_NUMBER_QUESTION, 0);
+            numberQuestion = savedInstanceState.getInt(KEY_NUMBER_QUESTION, 1);
             randomNumber = savedInstanceState.getInt(KEY_RANDOM_NUMBER, 0);
         }
 
@@ -98,8 +100,10 @@ public class Game extends AppCompatActivity {
                     .show();
         } else {
             //game over
-            Intent intent = GameOver.gameOver(Game.this, numberQuestion);
-            startActivityForResult(intent, REQUEST_CODE_GAME_OVER);
+            //Intent intent = GameOver.gameOver(Game.this, numberQuestion);
+            Intent intent = new Intent(Game.this, GameOver.class);
+            intent.putExtra("numberQuestion",numberQuestion);
+            startActivity(intent);
         }
     }
 

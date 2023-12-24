@@ -19,6 +19,9 @@ public class GameOver extends AppCompatActivity {
     private final String[] moneyLevels = {
             "","$50","$100","$200","$300","$500","$1000","$2000","$4000","$8000","$16000","$32000",
             "$64000","$125000","$500000","$1000000"};
+    private int numberQuestion;
+    private TextView mMoneyLevelTextView;
+    private TextView mGameOverTextView;
 
     public static Intent gameOver(Context packageContext, int numberQuestion) {
         Intent intent = new Intent(packageContext, Game.class);
@@ -32,8 +35,23 @@ public class GameOver extends AppCompatActivity {
         setContentView(R.layout.game_over);
 
         if (savedInstanceState != null) {
+            //numberQuestion = savedInstanceState.getInt(GAME_IS_OVER, 1);
+            Bundle extras = getIntent().getExtras();
+            numberQuestion = extras.getInt("numberQuestion");
 
         }
+
+        mMoneyLevelTextView = (TextView) findViewById(R.id.money_level);
+        mGameOverTextView = (TextView) findViewById(R.id.game_over);
+
+        System.out.print(numberQuestion);
+        mMoneyLevelTextView.setText(numberQuestion+"");
+        mGameOverTextView.setText(numberQuestion+"");
+
+        //mMoneyLevelTextView.setText(moneyLevels[numberQuestion-1]);
+        //mGameOverTextView.setText("Congratulations! You've answered "+ (numberQuestion-1) +
+        //        " questions and won " + moneyLevels[numberQuestion-1] + " dollars!");
+
 
         /*
         questions = getResources().getStringArray(R.array.question);
@@ -75,6 +93,7 @@ public class GameOver extends AppCompatActivity {
                 setAnswerShownResult(true);
             }
         });*/
+
     }
 
 
