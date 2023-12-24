@@ -12,7 +12,7 @@ import android.widget.Toast;
 import java.util.Random;
 
 public class Game extends AppCompatActivity {
-    private int numberQuestion =1;
+    private int numberQuestion = 1;
     private static final String KEY_NUMBER_QUESTION = "numberQuestion";
 
     //first element of moneyLevels array is empty because question numbers start with 1
