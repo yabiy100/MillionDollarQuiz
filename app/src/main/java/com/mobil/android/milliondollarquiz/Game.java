@@ -19,7 +19,7 @@ public class Game extends AppCompatActivity {
 
     //first element of moneyLevels array is empty because question numbers start with 1
     private final String[] moneyLevels = {
-            "","$50","$100","$200","$300","$500","$1000","$2000","$4000","$8000","$16000","$32000",
+            "$0","$50","$100","$200","$300","$500","$1000","$2000","$4000","$8000","$16000","$32000",
             "$64000","$125000","$500000","$1000000"};
     private String[] questions;
     private int randomNumber = new Random().nextInt(50) + 0;
@@ -90,6 +90,12 @@ public class Game extends AppCompatActivity {
             //new question
             int messageResourceId = 0;
             numberQuestion++;
+            if(numberQuestion>15){
+                //game won
+                Intent intent = new Intent(Game.this, GameOver.class);
+                intent.putExtra("NUMBER_QUESTION", numberQuestion);
+                startActivity(intent);
+            }
             mMoneyLevelTextView.setText(moneyLevels[numberQuestion]);
 
             randomNumber = new Random().nextInt(50) + 0;
@@ -100,9 +106,8 @@ public class Game extends AppCompatActivity {
                     .show();
         } else {
             //game over
-            //Intent intent = GameOver.gameOver(Game.this, numberQuestion);
             Intent intent = new Intent(Game.this, GameOver.class);
-            intent.putExtra("numberQuestion",numberQuestion);
+            intent.putExtra("NUMBER_QUESTION", numberQuestion);
             startActivity(intent);
         }
     }

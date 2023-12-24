@@ -26,14 +26,13 @@
         <item id="@+id/question24">What is the speed of light?\n a) 299,792 kilometers per second b) 314,159 kilometers per second \n c) 501,201 kilometers per second d) 200,000 kilometers per second</item>
         <item id="@+id/question25">In which year did the Berlin Wall fall?\n a) 1963 b) 1975 \n c) 1995 d) 1989</item>
         <item id="@+id/question26">Who is the author of "One Hundred Years of Solitude"?\n a) Gabriel Garcia Marquez b) Isabel Allende \n c) Mario Vargas Llosa d) Pablo Neruda</item>
-        <!--Checked questions up till here -->
         <item id="@+id/question27">What is the largest species of big cat?\n a) African Lion b) Siberian Tiger  \n c) Bengal Tiger d) Jaguar</item>
         <item id="@+id/question28">Who discovered gravity?\n a) Johannes Kepler  b) Albert Einstein \n c) Galileo Galilei d) Isaac Newton </item>
         <item id="@+id/question29">What is the chemical symbol for water?\n a) NaCl b) NO2 \n c) H2O d) CO2 </item>
         <item id="@+id/question30">Which is the highest mountain in the world?\n a) Mount Everest b) K2 \n c) Kangchenjunga d) Lhotse</item>
         <item id="@+id/question31">Who painted "The Last Supper"?\n a) Leonardo da Vinci b) Michelangelo \n c) Raphael d) Donatello</item>
         <item id="@+id/question32">What is the capital of China?\n a) Beijing b) Shanghai \n c) Hong Kong d) Taipei</item>
-        <item id="@+id/question33">In which year did World War I begin?\n a) 1914 b) 1917 \n c) 1919 d) 1911</item>
+        <item id="@+id/question33">In which year did World War I begin?\n a) 1919   b) 1917 \n c) 1914 d) 1911</item>
         <item id="@+id/question34">Who is the author of "The Odyssey"?\n a) Homer b) Virgil \n c) Sophocles d) Aesop</item>
         <item id="@+id/question35">What is the largest bird in the world?\n a) Ostrich b) Eagle \n c) Albatross d) Penguin</item>
         <item id="@+id/question36">Which element has the chemical symbol Na?\n a) Sodium b) Nickel \n c) Neon d) Nitrogen</item>
@@ -42,14 +41,14 @@
         <item id="@+id/question39">Who wrote "The Scarlet Letter"?\n a) Nathaniel Hawthorne b) Edgar Allan Poe \n c) Herman Melville d) Emily Dickinson</item>
         <item id="@+id/question40">Which planet is known as the "Red Planet"?\n a) Mars b) Venus \n c) Jupiter d) Saturn</item>
         <item id="@+id/question41">Who is the lead vocalist of the band Queen?\n a) Freddie Mercury b) Mick Jagger \n c) David Bowie d) Elton John</item>
-        <item id="@+id/question42">What is the smallest prime number?\n a) 2 b) 1 \n c) 3 d) 5</item>
+        <item id="@+id/question42">What is the smallest prime number?\n a) 1 b) 2 \n c) 3 d) 5</item>
         <item id="@+id/question43">Who wrote "The Adventures of Sherlock Holmes"?\n a) Arthur Conan Doyle b) Agatha Christie \n c) Raymond Chandler d) Dashiell Hammett</item>
         <item id="@+id/question44">What is the capital of Argentina?\n a) Buenos Aires b) Rio de Janeiro \n c) Santiago d) Lima</item>
         <item id="@+id/question45">Which planet is known as the "Blue Planet"?\n a) Earth b) Neptune \n c) Uranus d) Pluto</item>
-        <item id="@+id/question46">In which year did World War II begin?\n a) 1939 b) 1941 \n c) 1943 d) 1945</item>
+        <item id="@+id/question46">In which year did World War II begin?\n a) 1943 b) 1941 \n c) 1939 d) 1945</item>
         <item id="@+id/question47">Who is the author of "The Lord of the Rings"?\n a) J.R.R. Tolkien b) C.S. Lewis \n c) J.K. Rowling d) George R.R. Martin</item>
         <item id="@+id/question48">What is the largest animal on land?\n a) Elephant b) Giraffe \n c) Rhinoceros d) Hippopotamus</item>
-        <item id="@+id/question49">What is the chemical symbol for iron?\n a) Fe b) Au \n c) Ag d) Cu</item>
+        <item id="@+id/question49">What is the chemical symbol for iron?\n a) Cu b) Au \n c) Ag d) Fe</item>
         <item id="@+id/question50">Who is known as the "Queen of Pop"?\n a) Madonna b) Beyoncé \n c) Rihanna d) Lady Gaga</item>
     </string-array>
 
@@ -66,8 +65,6 @@
         <item>c</item>
         <item>a</item>
         <!-- Questions 11 to 30-->
-
-
 
         <item>a</item>
         <item>d</item>
@@ -91,22 +88,22 @@
         <item>a</item>
         <!-- Question 31 to 50-->
         <item>a</item>
-        <item>b</item>
-        <item>c</item>
-        <item>a</item>
-        <item>a</item>
-        <item>d</item>
-        <item>b</item>
-        <item>b</item>
-        <item>a</item>
-        <item>a</item>
-        <item>d</item>
-        <item>b</item>
-        <item>c</item>
-        <item>a</item>
         <item>a</item>
         <item>c</item>
+        <item>a</item>
+        <item>a</item>
+        <item>a</item>
+        <item>a</item>
         <item>b</item>
+        <item>a</item>
+        <item>a</item>
+        <item>a</item>
+        <item>b</item>
+        <item>a</item>
+        <item>a</item>
+        <item>a</item>
+        <item>c</item>
+        <item>a</item>
         <item>a</item>
         <item>d</item>
         <item>a</item>
