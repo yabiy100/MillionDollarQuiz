@@ -24,6 +24,7 @@
         android:padding="24dp"
         android:layout_marginTop="-375dp"
         android:textSize="22sp"
+
          />
     <Button
         android:id="@+id/back_home"
