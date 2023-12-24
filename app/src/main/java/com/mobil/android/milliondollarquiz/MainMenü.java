@@ -35,6 +35,14 @@ public class MainMenü extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        mHighScoreButton = (Button) findViewById(R.id.high_score);
+        mHighScoreButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainMenü.this, HighScore.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override

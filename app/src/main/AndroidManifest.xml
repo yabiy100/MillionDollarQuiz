@@ -19,6 +19,8 @@
         </activity>
         <activity android:name="com.mobil.android.milliondollarquiz.GameOver">
         </activity>
+        <activity android:name="com.mobil.android.milliondollarquiz.HighScore">
+        </activity>
     </application>
 
 </manifest>

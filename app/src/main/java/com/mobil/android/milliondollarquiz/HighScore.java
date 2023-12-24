@@ -5,10 +5,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-public class HighScore extends AppCompatActivity {
+import java.util.ArrayList;
+
+public class HighScore extends AppCompatActivity implements MyRecyclerViewAdapter.ItemClickListener{
 
     private static final String GAME_IS_OVER =
             "com.mobil.android.MillionDollarQuiz.game_is_over";
@@ -25,18 +30,27 @@ public class HighScore extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.game_over);
+        setContentView(R.layout.high_score);
 
         if (savedInstanceState != null) {
-            numberQuestion = savedInstanceState.getInt(KEY_NUMBER_QUESTION, 1);
+            //numberQuestion = savedInstanceState.getInt(KEY_NUMBER_QUESTION, 1);
         }
 
-        Intent intent = getIntent();
-        Integer numberQuestion = intent.getIntExtra("NUMBER_QUESTION",1);
 
-        mMoneyLevelTextView = (TextView) findViewById(R.id.money_level);
-        mGameOverTextView = (TextView) findViewById(R.id.game_over);
 
+        ArrayList<String> animalNames = new ArrayList<>();
+        animalNames.add("16.11.1999   " + moneyLevels[9]);
+        animalNames.add("12.12.2012   " + moneyLevels[15]);
+        animalNames.add("06.06.2022   " + moneyLevels[3]);
+        animalNames.add("02.02.2023   " + moneyLevels[6]);
+        animalNames.add("01.01.2000   " + moneyLevels[2]);
+
+        // set up the RecyclerView
+        RecyclerView recyclerView = findViewById(R.id.high_scores);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        adapter = new MyRecyclerViewAdapter(this, animalNames);
+        adapter.setClickListener(this);
+        recyclerView.setAdapter(adapter);
 
         mBackHome = (Button) findViewById(R.id.back_home);
 
@@ -51,6 +65,11 @@ public class HighScore extends AppCompatActivity {
 
 
     }
+    MyRecyclerViewAdapter adapter;
 
 
+    @Override
+    public void onItemClick(View view, int position) {
+        Toast.makeText(this, "You clicked " + adapter.getItem(position) + " on row number " + position, Toast.LENGTH_SHORT).show();
+    }
 }
