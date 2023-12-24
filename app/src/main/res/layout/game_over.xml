@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
+    android:background="#2AF878"
     tools:context="com.mobil.android.milliondollarquiz.GameOver">
 
     <TextView
@@ -24,6 +25,14 @@
         android:layout_marginTop="-375dp"
         android:textSize="22sp"
          />
+    <Button
+        android:id="@+id/back_home"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="@string/back_home"
+        android:background="#098ED5"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="300dp"/>
 
 
 </LinearLayout>

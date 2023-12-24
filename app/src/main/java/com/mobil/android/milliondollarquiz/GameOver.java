@@ -23,6 +23,7 @@ public class GameOver extends AppCompatActivity {
     private int numberQuestion;
     private TextView mMoneyLevelTextView;
     private TextView mGameOverTextView;
+    private Button mBackHome;
 
 
     @Override
@@ -47,6 +48,16 @@ public class GameOver extends AppCompatActivity {
             mGameOverTextView.setText("Congratulations! You've answered "+ (numberQuestion-1) +
                     " questions and won " + moneyLevels[numberQuestion-1] + " dollars!");
         }
+        mBackHome = (Button) findViewById(R.id.back_home);
+
+        mBackHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(GameOver.this, MainMenü.class);
+                startActivity(intent);
+            }
+        });
+
 
 
     }

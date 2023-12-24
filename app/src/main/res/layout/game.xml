@@ -6,44 +6,60 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
+    android:background="#2AF878"
     tools:context="com.mobil.android.milliondollarquiz.Game">
 
     <TextView
         android:id="@+id/money_level"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="450dp"
         android:padding="24dp"
-        android:textSize="25sp"
-        android:layout_marginBottom="450dp"/>
+        android:textSize="25sp" />
 
     <TextView
         android:id="@+id/question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="24dp"
         android:layout_marginTop="-375dp"
-        android:textSize="22sp"
-        android:text="@string/question"/>
+        android:padding="24dp"
+        android:text="@string/question"
+        android:textSize="22sp" />
 
     <Button
         android:id="@+id/a"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/a"/>
+        android:background="#098ED5"
+        android:textColor="@android:color/white"
+        android:layout_margin="5dp"
+        android:text="@string/a" />
+
     <Button
         android:id="@+id/b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/b"/>
+        android:background="#098ED5"
+        android:textColor="@android:color/white"
+        android:layout_margin="5dp"
+        android:text="@string/b" />
+
     <Button
         android:id="@+id/c"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/c"/>
+        android:background="#098ED5"
+        android:textColor="@android:color/white"
+        android:layout_margin="5dp"
+        android:text="@string/c" />
+
     <Button
         android:id="@+id/d"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/d"/>
+        android:background="#098ED5"
+        android:textColor="@android:color/white"
+        android:layout_margin="5dp"
+        android:text="@string/d" />
 
 </LinearLayout>
